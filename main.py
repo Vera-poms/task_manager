@@ -1,8 +1,12 @@
-# from oop import Chat
+import tkinter as tk
+import ui
 
-# chat_with_abena = Chat()
-# print(chat_with_abena)
 
-names = ("Ama", "Kofi", "Aba", "Ekua")
-for name in names:
-    print(f"{name}")
+app = tk.Tk()
+app.title("Task Manager")
+app.geometry("720x480")
+
+
+ui.show_all_tasks_frame(app)
+
+app.mainloop()
